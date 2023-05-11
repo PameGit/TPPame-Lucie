@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Liste des produits";
+}
+
+@foreach (Produit str in Model)
+{
+   <div class="card" style="width: 18rem;" id="card">
+  <img src="@str.ImageURL" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@str.Nom</h5>
+    <p class="card-text">@str.Description</p>
+    <p class="card-text">Prix = @str.Prix €</p>
+    <p class="card-text">Quantité restante = @str.Stock</p>
+    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+  </div>
+</div>
+}

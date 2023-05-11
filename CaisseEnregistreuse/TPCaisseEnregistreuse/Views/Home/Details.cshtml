@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Produits par catégorie";
+    Produit p = Model;
+}
+@model Produit 
+
+@if (Model == null)
+{
+    <p>Il n'y a pas de produits dans cette catégorie !</p>
+} else 
+{
+    <div class="card" style="width: 18rem;" id="card">
+  <img src="@p.ImageURL" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">@p.Nom</h5>
+    <p class="card-text">@p.Description</p>
+    <p class="card-text">Prix = @p.Prix €</p>
+    <p class="card-text">Quantité restante = @p.Stock</p>
+    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+  </div>
+</div>
+    }
+
+}

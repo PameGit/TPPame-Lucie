@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Liste de catégories";
+}
+@*<h1>@ViewData["Title"]</h1>*@
+
+@foreach (Categorie cate in Model)
+{
+    <div class="card w-50">
+  <div class="card-body">
+    <h5 class="card-title">@cate.Nom</h5>
+    <a href="#" class="btn btn-primary">Voir les produits</a>
+  </div>
+</div>
+
+}
+

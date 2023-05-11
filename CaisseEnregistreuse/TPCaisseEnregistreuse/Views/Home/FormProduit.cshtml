@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "formulaire Produit";
+}
+@model Produit
+
+
+
+<form asp-action="FormulaireProduitAjout" asp-controller="Home" enctype="multipart/form-data">
+   <h1 class="text-center">@(Model == null ? "Ajout":"Modification") d'un produit</h1>
+  <div class="text-danger">@Html.ValidationSummary()</div>
+  <input asp-for="Id" type="text" class="form-control" hidden>
+  <div class="mb-3">
+      <label asp-for="Nom" class="form-label"></label> 
+      <input asp-for="Nom" type="text" class="form-control">
+      <span asp-validation-for="Nom" class="text-danger"></span>
+  </div> 
+  <div class="mb-3"> 
+      <label asp-for="Description" class="form-label"></label>
+      <input asp-for="Description" type="text" class="form-control"> 
+      <span asp-validation-for="Description" class="text-danger"></span>
+  </div> 
+  <div class="mb-3"> 
+      <label asp-for="Prix" class="form-label"></label>
+      <input asp-for="Prix" type="text" class="form-control">
+      <span asp-validation-for="Prix" class="text-danger"></span> 
+  </div>
+  <div class="mb-3">
+      <label asp-for="Stock" class="form-label"></label> 
+      <input asp-for="Stock" type="text" class="form-control"> 
+      <span asp-validation-for="Stock" class="text-danger"></span>
+  </div>
+  <div class="mb-3">
+      <label asp-for="ImageURL" class="form-label"></label> 
+      <input type="file" name="image" class="form-control"> 
+  </div> 
+  <button asp-action="SubmitProduit" asp-controller="Home" type="submit" class="btn btn-primary">@(Model == null ? "Ajouter":"Modifier")</button>
+  </form>
+
+  @section Scripts {
+      @{
+          await Html.RenderPartialAsync("_ValidationScriptsPartial");
+      }
+  }
