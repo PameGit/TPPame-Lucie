@@ -1,24 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Produits par catégorie";
+    ViewData["Title"] = "Produit détaillé";
     Produit p = Model;
 }
-@model Produit 
+@model Produit
 
 @if (Model == null)
 {
-    <p>Il n'y a pas de produits dans cette catégorie !</p>
-} else 
+    <p>Ce produit n'est plus disponible !</p>
+}
+else
 {
     <div class="card" style="width: 18rem;" id="card">
-  <img src="@p.ImageURL" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">@p.Nom</h5>
-    <p class="card-text">@p.Description</p>
-    <p class="card-text">Prix = @p.Prix €</p>
-    <p class="card-text">Quantité restante = @p.Stock</p>
-    <a href="#" class="btn btn-primary">Ajouter au panier</a>
-  </div>
-</div>
-    }
-
+        <img src="@p.ImageURL" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@p.Nom</h5>
+            <p class="card-text">@p.Description</p>
+            <p class="card-text">Prix = @p.Prix €</p>
+            <p class="card-text">Quantité restante = @p.Stock</p>
+            <a href="DetailProduit" class="btn btn-primary">Ajouter au panier</a>
+            <a asp-action="FormulaireProduitUpdate" asp-controller="Home" asp-route-id="@p.Id" class="btn btn-warning">Modifier</a>
+            <a asp-action="Delete" asp-controller="Contact" asp-route-id="@p.Id" class="btn btn-danger">Supprimer</a>
+        </div>
+    </div>
 }
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+  }

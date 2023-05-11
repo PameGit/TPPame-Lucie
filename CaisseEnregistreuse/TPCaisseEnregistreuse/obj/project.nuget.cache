@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hFydcXdc+7ngUUVFx00OrVr3TjTMZ9zgsDAWGUByyKMZfO0HE2OMbbAg7EMrMsvlo2hOxaKrYYEr3y+mP27Uaw==",
+  "dgSpecHash": "/g34jGETnQtWBM5MbkiZQvpTVdl60ie7KUF6/25QwlMKWiWmTuLO9YX2zKkLNy/4YNlfreSdNLvDsh8exN6IAw==",
   "success": true,
-  "projectFilePath": "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
+  "projectFilePath": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Administrateur\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

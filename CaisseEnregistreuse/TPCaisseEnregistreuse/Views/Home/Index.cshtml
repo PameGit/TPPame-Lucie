@@ -8,10 +8,9 @@
   <img src="@str.ImageURL" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">@str.Nom</h5>
-    <p class="card-text">@str.Description</p>
     <p class="card-text">Prix = @str.Prix €</p>
-    <p class="card-text">Quantité restante = @str.Stock</p>
-    <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a href="#" class="btn btn-primary">Ajouter au panier</a>
+            <a asp-action="Details" asp-controller="Home" asp-route-id="@str.Id" class="btn btn-primary">Détail du produit</a>
   </div>
 </div>
 }

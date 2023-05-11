@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj": {}
+    "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj": {}
   },
   "projects": {
-    "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj": {
+    "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
+        "projectUniqueName": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
         "projectName": "TPCaisseEnregistreuse",
-        "projectPath": "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
+        "projectPath": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\TPCaisseEnregistreuse.csproj",
         "packagesPath": "C:\\Users\\Administrateur\\.nuget\\packages\\",
-        "outputPath": "C:\\Formation\\formationFullStack\\C#\\ASPNetCore\\Exercice\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\obj\\",
+        "outputPath": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Administrateur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

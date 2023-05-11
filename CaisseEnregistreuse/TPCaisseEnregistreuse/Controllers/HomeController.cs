@@ -35,8 +35,8 @@ namespace TPCaisseEnregistreuse.Controllers
 
         public IActionResult Details(int id)
         {
-
-            return View();
+            var produit = _db.GetById(id);
+            return View("Details", produit);
         }
 
         public IActionResult FormulaireProduitAjout()
@@ -70,6 +70,22 @@ namespace TPCaisseEnregistreuse.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var contact = _db.GetById(id); 
+            if (contact == null)
+                return View("Error");
+
+            _db.Delete(id);
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Panier()
+        {
+            return View("Panier");
         }
 
 
