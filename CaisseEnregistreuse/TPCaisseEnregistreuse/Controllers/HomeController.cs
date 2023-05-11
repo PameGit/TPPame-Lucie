@@ -83,9 +83,17 @@ namespace TPCaisseEnregistreuse.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public IActionResult Panier()
+        public IActionResult Panier(int id)
         {
-            return View("Panier");
+            Produit produit = _db.GetById(id);
+            List<Produit> addCart = new List<Produit>();
+
+            if (produit != null)
+            {
+                addCart.Add(produit);
+            }
+
+            return View("Panier", addCart);
         }
 
 

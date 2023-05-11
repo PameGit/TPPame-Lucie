@@ -2,4 +2,15 @@
     ViewData["Title"] = "Panier";
 }
 <h1>Votre panier</h1>
+@foreach (Produit str in Model)
+{
+    <div class="card" style="width: 18rem;" id="card">
+        <img src="@str.ImageURL" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">@str.Nom</h5>
+            <p class="card-text">Prix = @str.Prix €</p>
+            <a asp-action="Index" asp-controller="Home" asp-route-id="@str.Id" class="btn btn-primary">Continuer mes achats</a>
+        </div>
+    </div>
+}
 

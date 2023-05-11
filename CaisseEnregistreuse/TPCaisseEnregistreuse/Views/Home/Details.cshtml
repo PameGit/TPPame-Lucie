@@ -17,9 +17,10 @@ else
             <p class="card-text">@p.Description</p>
             <p class="card-text">Prix = @p.Prix €</p>
             <p class="card-text">Quantité restante = @p.Stock</p>
-            <a href="DetailProduit" class="btn btn-primary">Ajouter au panier</a>
+            <a href="DetailProduit" class="btn btn-primary"></a>
+            <a asp-action="Panier" asp-controller="Home" asp-route-id="@p.Id" class="btn btn-warning">Ajouter au panier</a>
             <a asp-action="FormulaireProduitUpdate" asp-controller="Home" asp-route-id="@p.Id" class="btn btn-warning">Modifier</a>
-            <a asp-action="Delete" asp-controller="Contact" asp-route-id="@p.Id" class="btn btn-danger">Supprimer</a>
+            <a asp-action="Delete" asp-controller="Home" asp-route-id="@p.Id" class="btn btn-danger">Supprimer</a>
         </div>
     </div>
 }
