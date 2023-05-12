@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ErbWgeIPU5iKHaJgpeQUkEmKiGzkvve9UXejUmr2wH8=",
+  "Hash": "l07xgH03/OKlQKs7j9cdg0SXDXU9wMTFUMzI3sK2iKY=",
   "Source": "TPCaisseEnregistreuse",
   "BasePath": "_content/TPCaisseEnregistreuse",
   "Mode": "Default",
@@ -151,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\74c14c29-8f4f-48de-b345-6d9a804fe88e-image"
+    },
+    {
+      "Identity": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\wwwroot\\images\\b20c78fa-13a3-4630-88ed-c485e4b716fa-image",
+      "SourceId": "TPCaisseEnregistreuse",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\wwwroot\\",
+      "BasePath": "_content/TPCaisseEnregistreuse",
+      "RelativePath": "images/b20c78fa-13a3-4630-88ed-c485e4b716fa-image",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\b20c78fa-13a3-4630-88ed-c485e4b716fa-image"
+    },
+    {
+      "Identity": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\wwwroot\\images\\ea53eb26-fc2c-4e41-9df9-c66f3765542a-image",
+      "SourceId": "TPCaisseEnregistreuse",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\wwwroot\\",
+      "BasePath": "_content/TPCaisseEnregistreuse",
+      "RelativePath": "images/ea53eb26-fc2c-4e41-9df9-c66f3765542a-image",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ea53eb26-fc2c-4e41-9df9-c66f3765542a-image"
     },
     {
       "Identity": "C:\\Repos\\TPPame-Lucie\\CaisseEnregistreuse\\TPCaisseEnregistreuse\\wwwroot\\js\\site.js",
